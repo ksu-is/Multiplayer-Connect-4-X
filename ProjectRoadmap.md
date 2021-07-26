@@ -14,9 +14,14 @@
 ## Sprint 2 requirments:
 - [x] Get numpy and pygame packages to import properly
    (had to download code package that allowed numpy and pygame to import)
-- [] Using tkinter, use a slider to designate grid size (if possible)
-- [] Using tkinter, use a slider to designate the player amount (if possible) 
 - [] Prompt user input to designate the grid size
-- [] Allow the GUI to accept and display the user input grid size prpoerly 
+- [] Fix display size to properly display any reasonable grid size from user input above
+- [] Allow for 3 in a row connection to win (Horizontal, vertical and diagonal)
+- [] Allow for 5 in a row connection to win (Horizontal, vertical and diagonal)
+- [] Allow for 6 in a row connection to win (Horizontal, vertical and diagonal)
+- [] Using tkinter, use a slider to designate grid size (if possible)
+- [] Using tkinter, use a slider to designate the player amount (if possible, if not use input statement that has been tested and works properly) 
+- [] Allow the GUI to accept and display the user input grid size prpoerly (if possible if not use input statement that has been tested and works properly)
     ()
-- [] Make changes in original code to allow for 2-4 players to play (adding extra colors to use in gameplay)
+- [] Add the color yellow to be used in gameplay
+- [] Make changes to allow for 2-4 players to play (adding extra colors to use in gameplay)
