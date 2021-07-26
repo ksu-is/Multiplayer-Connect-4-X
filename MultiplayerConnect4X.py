@@ -7,9 +7,10 @@ BLUE = (0,0,255)
 BLACK = (0,0,0)
 RED = (255,0,0)
 YELLOW = (255,255,0)
+GREEN = (3,252,90)
 
-ROW_COUNT_in = input("Enter Number of Rows: ")
-COLUMN_COUNT_in = input("Enter Number of Columns: ")
+ROW_COUNT_in = input("Enter Number of Rows between 5 and 10: ")
+COLUMN_COUNT_in = input("Enter Number of Columns between 5 and 10: ")
 
 ROW_COUNT = int(ROW_COUNT_in)
 COLUMN_COUNT = int(COLUMN_COUNT_in)
@@ -79,7 +80,7 @@ turn = 0
 
 pygame.init()
 
-SQUARESIZE = 100
+SQUARESIZE = 50
 
 width = COLUMN_COUNT * SQUARESIZE
 height = (ROW_COUNT+1) * SQUARESIZE
