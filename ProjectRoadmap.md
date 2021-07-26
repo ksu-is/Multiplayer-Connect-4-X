@@ -23,5 +23,5 @@
 - [] Using tkinter, use a slider to designate the player amount (if possible, if not use input statement that has been tested and works properly) 
 - [] Allow the GUI to accept and display the user input grid size prpoerly (if possible if not use input statement that has been tested and works properly)
     ()
-- [] Add the color yellow to be used in gameplay
+- [] Add the color green to be used in gameplay
 - [] Make changes to allow for 2-4 players to play (adding extra colors to use in gameplay)
