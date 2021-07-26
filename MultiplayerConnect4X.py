@@ -11,9 +11,11 @@ GREEN = (3,252,90)
 
 ROW_COUNT_in = input("Enter Number of Rows between 5 and 10: ")
 COLUMN_COUNT_in = input("Enter Number of Columns between 5 and 10: ")
+Num_Connections_in= input("Enter Number of Connections Required between 3 and 5: ")
 
 ROW_COUNT = int(ROW_COUNT_in)
 COLUMN_COUNT = int(COLUMN_COUNT_in)
+NUM_CONNECT = int(Num_Connections_in)
 
 def create_board():
 	board = np.zeros((ROW_COUNT,COLUMN_COUNT))
@@ -35,28 +37,81 @@ def print_board(board):
 
 def winning_move(board, piece):
 	# Check horizontal locations for win
-	for c in range(COLUMN_COUNT-3):
-		for r in range(ROW_COUNT):
-			if board[r][c] == piece and board[r][c+1] == piece and board[r][c+2] == piece and board[r][c+3] == piece:
-				return True
+    if NUM_CONNECT==5:
+    	for c in range(COLUMN_COUNT-4):
+	    	for r in range(ROW_COUNT):
+		    	if board[r][c] == piece and board[r][c+1] == piece and board[r][c+2] == piece and board[r][c+3] == piece and board[r][c+4] == piece:
+			    	return True
+
+    elif NUM_CONNECT==4:
+    	for c in range(COLUMN_COUNT-3):
+	    	for r in range(ROW_COUNT):
+		    	if board[r][c] == piece and board[r][c+1] == piece and board[r][c+2] == piece and board[r][c+3] == piece:
+			    	return True
+
+    else:
+    	for c in range(COLUMN_COUNT-2):
+	    	for r in range(ROW_COUNT):
+		    	if board[r][c] == piece and board[r][c+1] == piece and board[r][c+2] == piece:
+			    	return True
 
 	# Check vertical locations for win
-	for c in range(COLUMN_COUNT):
-		for r in range(ROW_COUNT-3):
-			if board[r][c] == piece and board[r+1][c] == piece and board[r+2][c] == piece and board[r+3][c] == piece:
-				return True
+    if NUM_CONNECT==5:
+	    for c in range(COLUMN_COUNT):
+    	    	for r in range(ROW_COUNT-3):
+	    	    	if board[r][c] == piece and board[r+1][c] == piece and board[r+2][c] == piece and board[r+3][c] == piece:
+		    	    	return True
+
+    elif NUM_CONNECT==4:
+	    for c in range(COLUMN_COUNT):
+    	    	for r in range(ROW_COUNT-3):
+	    	    	if board[r][c] == piece and board[r+1][c] == piece and board[r+2][c] == piece and board[r+3][c] == piece:
+		    	    	return True
+
+    else:
+	    for c in range(COLUMN_COUNT):
+    	    	for r in range(ROW_COUNT-3):
+	    	    	if board[r][c] == piece and board[r+1][c] == piece and board[r+2][c] == piece and board[r+3][c] == piece:
+		    	    	return True
+
 
 	# Check positively sloped diaganols
-	for c in range(COLUMN_COUNT-3):
-		for r in range(ROW_COUNT-3):
-			if board[r][c] == piece and board[r+1][c+1] == piece and board[r+2][c+2] == piece and board[r+3][c+3] == piece:
-				return True
+    if NUM_CONNECT==5:
+        for c in range(COLUMN_COUNT-3):
+     	    for r in range(ROW_COUNT-3):
+                if board[r][c] == piece and board[r+1][c+1] == piece and board[r+2][c+2] == piece and board[r+3][c+3] == piece:
+                    return True
+
+    elif NUM_CONNECT==4:
+        for c in range(COLUMN_COUNT-3):
+     	    for r in range(ROW_COUNT-3):
+                if board[r][c] == piece and board[r+1][c+1] == piece and board[r+2][c+2] == piece and board[r+3][c+3] == piece:
+                    return True
+
+    else:
+        for c in range(COLUMN_COUNT-3):
+     	    for r in range(ROW_COUNT-3):
+                if board[r][c] == piece and board[r+1][c+1] == piece and board[r+2][c+2] == piece and board[r+3][c+3] == piece:
+                    return True
 
 	# Check negatively sloped diaganols
-	for c in range(COLUMN_COUNT-3):
-		for r in range(3, ROW_COUNT):
-			if board[r][c] == piece and board[r-1][c+1] == piece and board[r-2][c+2] == piece and board[r-3][c+3] == piece:
-				return True
+    if NUM_CONNECT==5:
+	    for c in range(COLUMN_COUNT-3):
+    		for r in range(3, ROW_COUNT):
+	    		if board[r][c] == piece and board[r-1][c+1] == piece and board[r-2][c+2] == piece and board[r-3][c+3] == piece:
+		    		return True
+
+    elif NUM_CONNECT==4:
+	    for c in range(COLUMN_COUNT-3):
+    		for r in range(3, ROW_COUNT):
+	    		if board[r][c] == piece and board[r-1][c+1] == piece and board[r-2][c+2] == piece and board[r-3][c+3] == piece:
+		    		return True
+
+    else:
+	    for c in range(COLUMN_COUNT-3):
+    		for r in range(3, ROW_COUNT):
+	    		if board[r][c] == piece and board[r-1][c+1] == piece and board[r-2][c+2] == piece and board[r-3][c+3] == piece:
+		    		return True
 
 def draw_board(board):
 	for c in range(COLUMN_COUNT):
