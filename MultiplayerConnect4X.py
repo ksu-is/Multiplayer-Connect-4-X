@@ -59,7 +59,7 @@ def winning_move(board, piece):
     if NUM_CONNECT==5:
 	    for c in range(COLUMN_COUNT):
     	    	for r in range(ROW_COUNT-3):
-	    	    	if board[r][c] == piece and board[r+1][c] == piece and board[r+2][c] == piece and board[r+3][c] == piece:
+	    	    	if board[r][c] == piece and board[r+1][c] == piece and board[r+2][c] == piece and board[r+3][c] == piece and board[r+4][c] == piece:
 		    	    	return True
 
     elif NUM_CONNECT==4:
@@ -71,7 +71,7 @@ def winning_move(board, piece):
     else:
 	    for c in range(COLUMN_COUNT):
     	    	for r in range(ROW_COUNT-3):
-	    	    	if board[r][c] == piece and board[r+1][c] == piece and board[r+2][c] == piece and board[r+3][c] == piece:
+	    	    	if board[r][c] == piece and board[r+1][c] == piece and board[r+2][c] == piece:
 		    	    	return True
 
 
