@@ -16,9 +16,9 @@
    (had to download code package that allowed numpy and pygame to import)
 - [x] Prompt user input to designate the grid size
 - [x] Fix display size to properly display any reasonable grid size from user input above
-- [] Allow for 3 in a row horizontal connection to win 
-- [] Allow for 4 in a row horizontal connection to win
-- [] Allow for 5 in a row horizontal connection to win
+- [x] Allow for 3 in a row horizontal connection to win 
+- [x] Allow for 4 in a row horizontal connection to win
+- [x] Allow for 5 in a row horizontal connection to win
 
 - [] Using tkinter, use a slider to designate grid size (if possible)
 - [] Using tkinter, use a slider to designate the player amount (if possible, if not use input statement that has been tested and works properly) 
