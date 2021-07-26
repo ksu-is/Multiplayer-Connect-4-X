@@ -132,6 +132,7 @@ board = create_board()
 print_board(board)
 game_over = False
 turn = 0
+count = 0
 
 pygame.init()
 
@@ -200,6 +201,15 @@ while not game_over:
 			print_board(board)
 			draw_board(board)
 
+			count = count + 1
+			if count == (ROW_COUNT*COLUMN_COUNT+1) and game_over == False:
+				game_over = True
+				label = myfont.render("Tie! Try Again", 1, BLACK)
+				screen.blit(label, (40,10))
+			print_board(board)
+			draw_board(board)
+			
+			
 			turn += 1
 			turn = turn % 2
 
