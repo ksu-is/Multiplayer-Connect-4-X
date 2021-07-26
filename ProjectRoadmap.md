@@ -19,6 +19,11 @@
 - [x] Allow for 3 in a row horizontal connection to win 
 - [x] Allow for 4 in a row horizontal connection to win
 - [x] Allow for 5 in a row horizontal connection to win
+- [x] Allow for 3 in a row Vertical connection to win 
+- [x] Allow for 4 in a row Vertical connection to win
+- [x] Allow for 5 in a row Vertical connection to win
+ 
+- [x] Fixed issue where entire customized board fills up and nobody wins. Game would not stop and would not display apropriate message. Now if the entire board fills up (any size of board) and nobody wins, message will display properly "Tie! Try Again"
 
 - [] Using tkinter, use a slider to designate grid size (if possible)
 - [] Using tkinter, use a slider to designate the player amount (if possible, if not use input statement that has been tested and works properly) 
