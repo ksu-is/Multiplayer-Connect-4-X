@@ -16,9 +16,19 @@ while ROW_COUNT_in < 5 or ROW_COUNT_in > 10:
 	ROW_COUNT_in = input("Enter Number of Rows between 5 and 10: ")
 	ROW_COUNT_in = int(ROW_COUNT_in)
 
-ROW_COUNT_in = input("Enter Number of Rows between 5 and 10: ")
-COLUMN_COUNT_in = input("Enter Number of Columns between 5 and 10: ")
-Num_Connections_in= input("Enter Number of Connections Required between 3 and 5: ")
+COLUMN_COUNT_in = 0
+
+while COLUMN_COUNT_in < 5 or COLUMN_COUNT_in > 10:
+	print("Enter a number within the range")
+	COLUMN_COUNT_in = input("Enter Number of Columns between 5 and 10: ")
+	COLUMN_COUNT_in = int(COLUMN_COUNT_in)
+
+Num_Connections_in = 0
+
+while Num_Connections_in < 3 or Num_Connections_in > 5:
+	print("Enter a number within the range")
+	Num_Connections_in= input("Enter Number of Connections Required between 3 and 5: ")
+	Num_Connections_in= int(Num_Connections_in)	
 
 ROW_COUNT = int(ROW_COUNT_in)
 COLUMN_COUNT = int(COLUMN_COUNT_in)
