@@ -86,7 +86,7 @@ def winning_move(board, piece):
     if NUM_CONNECT==5:
         for c in range(COLUMN_COUNT-3):
      	    for r in range(ROW_COUNT-3):
-                if board[r][c] == piece and board[r+1][c+1] == piece and board[r+2][c+2] == piece and board[r+3][c+3] == piece:
+                if board[r][c] == piece and board[r+1][c+1] == piece and board[r+2][c+2] == piece and board[r+3][c+3] == piece and board[r+4][c+4] == piece:
                     return True
 
     elif NUM_CONNECT==4:
@@ -98,7 +98,7 @@ def winning_move(board, piece):
     else:
         for c in range(COLUMN_COUNT-3):
      	    for r in range(ROW_COUNT-3):
-                if board[r][c] == piece and board[r+1][c+1] == piece and board[r+2][c+2] == piece and board[r+3][c+3] == piece:
+                if board[r][c] == piece and board[r+1][c+1] == piece and board[r+2][c+2] == piece:
                     return True
 
 	# Check negatively sloped diaganols
