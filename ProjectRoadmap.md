@@ -33,13 +33,13 @@
 
 
 ## Finishing Touches:
-- [] Create loop to limit user inputs to desired range
-- [] Allow for 3 in a row positively slopped connections to win 
-- [] Allow for 4 in a row positively slopped connections to win
-- [] Allow for 5 in a row positively slopped connections to win
-- [] Allow for 3 in a row Negatively slopped connections to win 
-- [] Allow for 4 in a row Negatively slopped connections to win
-- [] Allow for 5 in a row Negatively slopped connections to win
+- [x] Create loop to limit user inputs to desired range
+- [x] Allow for 3 in a row positively slopped connections to win 
+- [x] Allow for 4 in a row positively slopped connections to win
+- [x] Allow for 5 in a row positively slopped connections to win
+- [x] Allow for 3 in a row Negatively slopped connections to win 
+- [x] Allow for 4 in a row Negatively slopped connections to win
+- [x] Allow for 5 in a row Negatively slopped connections to win
 - [] Make changes to allow for 2-4 players to play (adding extra colors to use in gameplay)
 
 
