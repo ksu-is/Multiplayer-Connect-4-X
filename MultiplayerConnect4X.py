@@ -9,6 +9,13 @@ RED = (255,0,0)
 YELLOW = (255,255,0)
 GREEN = (3,252,90)
 
+ROW_COUNT_in = 0
+
+while ROW_COUNT_in < 5 or ROW_COUNT_in > 10:
+	print("Enter a number within the range")
+	ROW_COUNT_in = input("Enter Number of Rows between 5 and 10: ")
+	ROW_COUNT_in = int(ROW_COUNT_in)
+
 ROW_COUNT_in = input("Enter Number of Rows between 5 and 10: ")
 COLUMN_COUNT_in = input("Enter Number of Columns between 5 and 10: ")
 Num_Connections_in= input("Enter Number of Connections Required between 3 and 5: ")
