@@ -244,7 +244,7 @@ while not game_over:
 			count = count + 1
 			if count == (ROW_COUNT*COLUMN_COUNT+1) and game_over == False:
 				game_over = True
-				label = myfont.render("Tie! Try Again", 1, BLACK)
+				label = myfont.render("Tie! Try Again", 1, BLUE)
 				screen.blit(label, (40,5))
 			print_board(board)
 			draw_board(board)
@@ -252,13 +252,13 @@ while not game_over:
 
 			if turn==0:
 				turn=1
-				print("turn was 0")
+				
 			elif turn==1:
 				turn=2
-				print("turn was 1")
+				
 			else:
 				turn=0
-				print("turn was 2")
+				
 
 
 #			turn += 1
