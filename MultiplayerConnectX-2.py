@@ -1,3 +1,4 @@
+# This is the 2 player verions
 import numpy as np
 import pygame
 import sys
