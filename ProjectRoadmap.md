@@ -41,7 +41,8 @@
 - [x] Allow for 4 in a row Negatively slopped connections to win
 - [x] Allow for 5 in a row Negatively slopped connections to win
 - [] Make changes to allow for 2-4 players to play (adding extra colors to use in gameplay)
-
+      (It was not possible to allow 2-4 players in the fashion I initially wanted, due to limited time. I have instead created two seperate versions. Two and three player             versions are availible!)
+       MultiplayerConnectX-2.py is two player, and MultiplayerConnectX-3.py is the three player version
 
 
 
